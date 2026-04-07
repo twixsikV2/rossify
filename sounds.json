@@ -1,0 +1,361 @@
+{
+  "songs": [
+    {
+      "name": "3 Nights",
+      "artist": "Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3RydDlwMS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3BlaTZ5MS5qcGc=",
+      "duration": 180
+    },
+    {
+      "name": "Babydoll",
+      "artist": "Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzA4bG5kaS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3BlaTZ5MS5qcGc=",
+      "duration": 210
+    },
+    {
+      "name": "King of Everything",
+      "artist": "Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzUxemc0bC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3BlaTZ5MS5qcGc=",
+      "duration": 195
+    },
+    {
+      "name": "Mama's Boy",
+      "artist": "Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzZ0bndqai5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2Ftem45Zy5qcGc=",
+      "duration": 225
+    },
+    {
+      "name": "White Keys",
+      "artist": "Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzY0NHIxdy5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3Byc3FyZC5qcGc=",
+      "duration": 240
+    },
+    {
+      "name": "Superstar Shit",
+      "artist": "Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3RydDlwMS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3k2c2RnaC5qcGc=",
+      "duration": 200
+    },
+    {
+      "name": "Phone Numbers",
+      "artist": "Dominic Fike, Kenny Beats",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhzOTRqMy5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3VxaDB0ZS5qcGc=",
+      "duration": 185
+    },
+    {
+      "name": "Die For You",
+      "artist": "Justin Bieber, Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzVsMjc2ei5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL25pMHp6aS5qcGc=",
+      "duration": 220
+    },
+    {
+      "name": "The kiss of Venus",
+      "artist": "Paul McCartney, Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2RhdTNzcC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2RiOW04cS5qcGc=",
+      "duration": 215
+    },
+    {
+      "name": "Photo ID",
+      "artist": "Remi Wolf, Dominic Fike",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2RhdTNzcC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3Y2NThuZS5qcGc=",
+      "duration": 190
+    },
+    {
+      "name": "Terms",
+      "artist": "slowthai, Dominic Fike, Denzel Curry",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL25pNmdmdy5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3Q1eDdqOC5qcGc=",
+      "duration": 205
+    },
+    {
+      "name": "Ебашь, Альбина",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2Z1eDR6dS5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3FvMTg2NC5qcGc=",
+      "duration": 220
+    },
+    {
+      "name": "Кайен",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2ptYjRidi5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhlcWwzaS5qcGc=",
+      "duration": 244
+    },
+    {
+      "name": "Кладбище Самолётов",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3JwZjV3YS5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3FvMTg2NC5qcGc=",
+      "duration": 456
+    },
+    {
+      "name": "Космос Нас Ждёт",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2o1Y2ZsdS5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3FvMTg2NC5qcGc=",
+      "duration": 264
+    },
+    {
+      "name": "Наше лето",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3U3NnUyaC5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhlcWwzaS5qcGc=",
+      "duration": 272
+    },
+    {
+      "name": "Русский рок",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL29xNDZ2eS5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhlcWwzaS5qcGc=",
+      "duration": 256
+    },
+    {
+      "name": "Рустем",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3c2M3Vmdi5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhlcWwzaS5qcGc=",
+      "duration": 280
+    },
+    {
+      "name": "Бесполезно",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2Z2ZmgxYS5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3Vrb3dzeS5qcGc=",
+      "duration": 556
+    },
+    {
+      "name": "Всё решено",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzZ4c3BlNC5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2J2anN4ai5qcGc=",
+      "duration": 100
+    },
+    {
+      "name": "Дешёвые драмы",
+      "artist": "Валентин Стрыкало",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2J2bzVsai5tNGE=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhlcWwzaS5qcGc=",
+      "duration": 300
+    },
+    {
+      "name": "Самый лучший эмо панк",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3N0bzh3by5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzk5azc2eC5wbmc=",
+      "duration": 328
+    },
+    {
+      "name": "Стрип клаб",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2NsYjZpci5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzk5azc2eC5wbmc=",
+      "duration": 228
+    },
+    {
+      "name": "Супермаркет",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3RmN2JsNC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 344
+    },
+    {
+      "name": "Типичная вечеринка с бассейном",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzZ4aTZkai5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 428
+    },
+    {
+      "name": "ТМСТС",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzE2emNsYS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 256
+    },
+    {
+      "name": "Ты разбила папину машину",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzVpZWhvdS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzk5azc2eC5wbmc=",
+      "duration": 332
+    },
+    {
+      "name": "Ханнамонтана",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzJ4bGppMS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 304
+    },
+    {
+      "name": "Мишка",
+      "artist": "ПОШЛАЯ МОЛЛИ & KATERINA",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3J0cjZpdi5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzVncjk3Yy5wbmc=",
+      "duration": 248
+    },
+    {
+      "name": "Радио Жажда",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhscDY0aC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL25yejBqdC5wbmc=",
+      "duration": 284
+    },
+    {
+      "name": "Райские цветы",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzMybWpzdi5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 216
+    },
+    {
+      "name": "CTRL+Zzz",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2p1dXBidC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhuZ3Bjay5wbmc=",
+      "duration": 288
+    },
+    {
+      "name": "Клеопатри",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL28wN25rMC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 292
+    },
+    {
+      "name": "ЛОЛ",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2kxMzdues5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhuZ3Bjay5wbmc=",
+      "duration": 248
+    },
+    {
+      "name": "Любимая песня твоей сестры",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzRmajZ2Zy5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 300
+    },
+    {
+      "name": "Молли",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2piem02Yi5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 368
+    },
+    {
+      "name": "Не обижай господина министра",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2VvNXlhbC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 272
+    },
+    {
+      "name": "Нон стоп",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3BtOXNiZC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 344
+    },
+    {
+      "name": "Паки пуси",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2UyM25oYS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 228
+    },
+    {
+      "name": "ПОРНХАБ КРИСМАС КЛАБ",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzdneXNteS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhuZ3Bjay5wbmc=",
+      "duration": 388
+    },
+    {
+      "name": "Прокля Табыла",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2hya3dzcC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 224
+    },
+    {
+      "name": "To Hell and Back",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2M4ZGEwOS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 352
+    },
+    {
+      "name": "Адская колыбельная",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3UwNTZuMy5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzYya3puYy5qcGc=",
+      "duration": 280
+    },
+    {
+      "name": "Банда Крыс",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3N3Ymd3Zy5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 296
+    },
+    {
+      "name": "Беспечный рыцарь тьмы",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3Uxa3kzMC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 368
+    },
+    {
+      "name": "Буду твоим пёсиком",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzlwdWdpYS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 308
+    },
+    {
+      "name": "ВСЕ ХОТЯТ МЕНЯ ПОЦЕЛОВАТЬ (Ver. 2)",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2d0NTlrZS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lLzhuZ3Bjay5wbmc=",
+      "duration": 352
+    },
+    {
+      "name": "Все хотят меня поцеловать",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3dybGJzbC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 228
+    },
+    {
+      "name": "Гласс",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2o3NTR2bS5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 260
+    },
+    {
+      "name": "Даже моя бэйби не знает",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3NxeHpjcC5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 332
+    },
+    {
+      "name": "Значит дружба",
+      "artist": "ПОШЛАЯ МОЛЛИ",
+      "file": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL3BldWFsYy5tcDM=",
+      "img": "aHR0cHM6Ly9maWxlcy5jYXRib3gubW9lL2cwNWo1bS5qcGc=",
+      "duration": 140
+    }
+  ]
+}
