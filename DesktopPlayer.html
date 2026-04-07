@@ -1452,6 +1452,271 @@
             }
         }
 
+        /* Tablet Portrait (768px - 1024px) */
+        @media (max-width: 1024px) and (min-width: 768px) {
+            body {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                width: 70px;
+                height: 100vh;
+                flex-direction: column;
+            }
+
+            .main-content {
+                flex: 1;
+                flex-direction: row;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .player-container {
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            .center-panel {
+                flex: 1;
+                padding: 25px;
+                gap: 25px;
+            }
+
+            .album-art-container {
+                width: 220px;
+                height: 220px;
+            }
+
+            .album-art {
+                border-radius: 16px;
+            }
+
+            .track-name {
+                font-size: 1.5rem;
+            }
+
+            .track-artist {
+                font-size: 1rem;
+            }
+
+            .controls {
+                gap: 20px;
+            }
+
+            .control-btn {
+                width: 40px;
+                height: 40px;
+            }
+
+            .play-btn {
+                width: 56px;
+                height: 56px;
+                font-size: 22px;
+            }
+
+            .right-panel {
+                width: 240px;
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .visualizer {
+                min-height: 180px;
+                gap: 5px;
+            }
+
+            .bar {
+                width: 5px;
+            }
+
+            .playlist-btn {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+
+            .bottom-controls {
+                gap: 10px;
+            }
+
+            .bottom-btn {
+                padding: 10px;
+                font-size: 0.8rem;
+            }
+
+            .library-view {
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            .library-list {
+                flex: 0 0 380px;
+                max-height: 70vh;
+                border-radius: 16px;
+            }
+
+            .library-preview {
+                flex: 0 0 300px;
+                border-radius: 16px;
+                padding: 25px;
+            }
+
+            .library-album-art {
+                width: 180px;
+                height: 180px;
+            }
+
+            .library-album-container {
+                width: 180px;
+                height: 180px;
+            }
+
+            .library-info-name {
+                font-size: 1.3rem;
+            }
+
+            .library-info-artist {
+                font-size: 1rem;
+            }
+
+            .library-item-cover {
+                width: 90px;
+                height: 90px;
+            }
+
+            .library-item-name {
+                font-size: 0.95rem;
+            }
+
+            .library-item-artist {
+                font-size: 0.8rem;
+            }
+
+            .search-container-main {
+                padding: 25px;
+                gap: 20px;
+            }
+
+            .search-input {
+                padding: 12px 16px;
+                font-size: 1rem;
+            }
+
+            .search-buttons {
+                gap: 10px;
+            }
+
+            .search-btn-online,
+            .search-btn-mytracks {
+                padding: 11px 18px;
+                font-size: 0.95rem;
+            }
+
+            .search-result-item {
+                gap: 14px;
+                padding: 13px;
+            }
+
+            .search-result-cover {
+                width: 65px;
+                height: 65px;
+            }
+
+            .recommended-tracks {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 14px;
+            }
+
+            .recommended-track {
+                padding: 11px;
+            }
+
+            .recommended-cover {
+                border-radius: 8px;
+            }
+
+            .recommended-name {
+                font-size: 0.9rem;
+            }
+
+            .recommended-artist {
+                font-size: 0.75rem;
+            }
+
+            .playlist-modal {
+                padding: 15px;
+            }
+
+            .playlist-content {
+                max-width: 85vw;
+                max-height: 75vh;
+                padding: 24px;
+            }
+
+            .playlist-header {
+                font-size: 1.3rem;
+            }
+
+            .playlist-item {
+                padding: 13px;
+                margin: 7px 0;
+            }
+
+            .info-content {
+                max-width: 85vw;
+                padding: 25px;
+            }
+
+            .info-header {
+                font-size: 1.4rem;
+            }
+
+            .info-text {
+                font-size: 0.95rem;
+            }
+
+            .lang-btn {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+
+            .context-menu {
+                min-width: 200px;
+            }
+
+            .context-menu-item {
+                padding: 11px 14px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Tablet Landscape (1024px - 1366px) */
+        @media (min-width: 1025px) and (max-width: 1366px) {
+            .library-list {
+                flex: 0 0 420px;
+            }
+
+            .library-preview {
+                flex: 0 0 320px;
+            }
+
+            .right-panel {
+                width: 260px;
+            }
+
+            .center-panel {
+                padding: 30px;
+            }
+
+            .album-art-container {
+                width: 240px;
+                height: 240px;
+            }
+
+            .track-name {
+                font-size: 1.6rem;
+            }
+        }
+
         @media (max-width: 768px) {
             body {
                 flex-direction: column;
@@ -1873,6 +2138,386 @@
             .lang-btn {
                 padding: 8px 12px;
                 font-size: 0.85rem;
+            }
+        }
+
+        /* Tablet Landscape Orientation */
+        @media (max-width: 1024px) and (orientation: landscape) {
+            .sidebar {
+                width: 50px;
+            }
+
+            .nav-icon {
+                width: 38px;
+                height: 38px;
+                font-size: 18px;
+            }
+
+            .main-content {
+                padding: 12px;
+                gap: 12px;
+            }
+
+            .player-container {
+                gap: 12px;
+            }
+
+            .center-panel {
+                padding: 18px;
+                gap: 18px;
+            }
+
+            .album-art-container {
+                width: 180px;
+                height: 180px;
+            }
+
+            .track-name {
+                font-size: 1.3rem;
+            }
+
+            .right-panel {
+                width: 200px;
+                padding: 15px;
+            }
+
+            .visualizer {
+                min-height: 140px;
+            }
+
+            .library-list {
+                flex: 0 0 300px;
+                max-height: 60vh;
+            }
+
+            .library-preview {
+                flex: 0 0 250px;
+                padding: 18px;
+            }
+
+            .library-album-art {
+                width: 150px;
+                height: 150px;
+            }
+
+            .library-album-container {
+                width: 150px;
+                height: 150px;
+            }
+
+            .library-info-name {
+                font-size: 1.1rem;
+            }
+
+            .library-info-artist {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Tablet Portrait Orientation */
+        @media (max-width: 1024px) and (orientation: portrait) {
+            .sidebar {
+                width: 70px;
+            }
+
+            .main-content {
+                flex-direction: column;
+                padding: 12px;
+            }
+
+            .player-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .center-panel {
+                padding: 20px;
+                gap: 20px;
+                flex: 0 0 auto;
+            }
+
+            .album-art-container {
+                width: 200px;
+                height: 200px;
+            }
+
+            .right-panel {
+                width: 100%;
+                flex-direction: row;
+                gap: 12px;
+                padding: 15px;
+            }
+
+            .visualizer {
+                flex: 0;
+                min-height: 80px;
+                gap: 3px;
+            }
+
+            .bar {
+                width: 4px;
+            }
+
+            .library-view {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .library-list {
+                flex: 0 0 auto;
+                max-height: 45vh;
+                border-radius: 16px;
+            }
+
+            .library-preview {
+                flex: 0 0 auto;
+                border-radius: 16px;
+                padding: 20px;
+            }
+
+            .library-album-art {
+                width: 160px;
+                height: 160px;
+            }
+
+            .library-album-container {
+                width: 160px;
+                height: 160px;
+            }
+
+            .library-info-name {
+                font-size: 1.2rem;
+            }
+
+            .library-info-artist {
+                font-size: 0.95rem;
+            }
+
+            .search-container-main {
+                padding: 20px;
+                gap: 18px;
+            }
+
+            .recommended-tracks {
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+                gap: 12px;
+            }
+        }
+
+        /* Touch Device Optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .control-btn,
+            .playlist-btn,
+            .bottom-btn,
+            .sort-btn,
+            .repeat-btn,
+            .lang-btn {
+                min-height: 44px;
+                min-width: 44px;
+            }
+
+            .library-item {
+                padding: 14px;
+            }
+
+            .search-result-item {
+                padding: 16px;
+            }
+
+            .playlist-item {
+                padding: 16px;
+                margin: 10px 0;
+            }
+
+            .context-menu-item {
+                padding: 14px 16px;
+                min-height: 44px;
+            }
+
+            .nav-icon {
+                min-height: 48px;
+                min-width: 48px;
+            }
+
+            .play-btn {
+                min-height: 56px;
+                min-width: 56px;
+            }
+
+            /* Увеличиваем зоны нажатия */
+            button {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+
+            /* Убираем zoom при двойном клике */
+            input,
+            button,
+            select {
+                font-size: 16px;
+            }
+        }
+
+        /* iPad Pro и большие планшеты */
+        @media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+            .library-list {
+                flex: 0 0 450px;
+            }
+
+            .library-preview {
+                flex: 0 0 350px;
+            }
+
+            .right-panel {
+                width: 280px;
+            }
+        }
+
+        /* Маленькие планшеты (7-8 дюймов) */
+        @media (min-width: 600px) and (max-width: 768px) {
+            .sidebar {
+                width: 65px;
+            }
+
+            .main-content {
+                flex-direction: column;
+                padding: 12px;
+            }
+
+            .player-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .center-panel {
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .album-art-container {
+                width: 180px;
+                height: 180px;
+            }
+
+            .track-name {
+                font-size: 1.3rem;
+            }
+
+            .right-panel {
+                width: 100%;
+                flex-direction: row;
+                gap: 12px;
+                padding: 15px;
+            }
+
+            .visualizer {
+                flex: 0;
+                min-height: 100px;
+            }
+
+            .library-view {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .library-list {
+                flex: 0 0 auto;
+                max-height: 50vh;
+            }
+
+            .library-preview {
+                flex: 0 0 auto;
+                padding: 20px;
+            }
+
+            .library-album-art {
+                width: 160px;
+                height: 160px;
+            }
+
+            .library-album-container {
+                width: 160px;
+                height: 160px;
+            }
+
+            .search-container-main {
+                padding: 20px;
+            }
+
+            .recommended-tracks {
+                grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            }
+        }
+
+        /* Средние планшеты (10 дюймов) */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .sidebar {
+                width: 70px;
+            }
+
+            .main-content {
+                flex-direction: row;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .player-container {
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            .center-panel {
+                flex: 1;
+                padding: 25px;
+                gap: 25px;
+            }
+
+            .album-art-container {
+                width: 220px;
+                height: 220px;
+            }
+
+            .track-name {
+                font-size: 1.5rem;
+            }
+
+            .right-panel {
+                width: 240px;
+                padding: 20px;
+            }
+
+            .library-view {
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            .library-list {
+                flex: 0 0 380px;
+                max-height: 70vh;
+            }
+
+            .library-preview {
+                flex: 0 0 300px;
+                padding: 25px;
+            }
+
+            .library-album-art {
+                width: 180px;
+                height: 180px;
+            }
+
+            .library-album-container {
+                width: 180px;
+                height: 180px;
+            }
+
+            .search-container-main {
+                padding: 25px;
+            }
+
+            .recommended-tracks {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             }
         }
     </style>
@@ -3114,6 +3759,43 @@
 
         // Загружаем myTracks из localStorage
         loadMyTracks();
+
+        // Обработка ориентации экрана
+        window.addEventListener('orientationchange', () => {
+            setTimeout(() => {
+                window.scrollTo(0, 0);
+                document.body.style.overflow = 'hidden';
+                document.body.style.overflow = 'auto';
+            }, 100);
+        });
+
+        // Предотвращение масштабирования на двойной клик
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', (e) => {
+            const now = Date.now();
+            if (now - lastTouchEnd <= 300) {
+                e.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+
+        // Оптимизация для сенсорных устройств
+        if ('ontouchstart' in window) {
+            document.body.classList.add('touch-device');
+            
+            // Увеличиваем зоны нажатия для кнопок
+            const buttons = document.querySelectorAll('button, .nav-icon, .library-item, .search-result-item');
+            buttons.forEach(btn => {
+                btn.style.minHeight = '44px';
+                btn.style.minWidth = '44px';
+            });
+        }
+
+        // Обработка viewport для планшетов
+        const viewport = document.querySelector('meta[name="viewport"]');
+        if (viewport) {
+            viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover');
+        }
 
         // Загружаем локальный файл
         async function handleLocalFileUpload(file) {
