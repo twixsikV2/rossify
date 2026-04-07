@@ -40,6 +40,9 @@
             font-weight: 700;
             letter-spacing: -1px;
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .nav-icons {
@@ -2524,7 +2527,9 @@
 </head>
 <body>
     <div class="sidebar">
-        <div class="logo">R</div>
+        <div class="logo">
+            <img src="icon.png" alt="Rossify" style="width: 32px; height: 32px; border-radius: 8px;">
+        </div>
         <div class="nav-icons">
             <div class="nav-icon active" data-i18n-title="home">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -2765,6 +2770,7 @@
 
     <audio id="audio-player"></audio>
 
+    <script src="electron-bridge.js"></script>
     <script>
         let currentLanguage = localStorage.getItem('language') || 'en';
         let translations = {};
@@ -3855,8 +3861,22 @@
         }
 
         // Обработчик кнопки загрузки локальных файлов
-        document.getElementById('upload-local-btn').onclick = () => {
-            document.getElementById('local-file-input').click();
+        document.getElementById('upload-local-btn').onclick = async () => {
+            // Если это Electron, используем Electron API
+            if (electronBridge && electronBridge.isRunningInElectron()) {
+                const tracks = await electronBridge.selectAndLoadFiles();
+                if (tracks.length > 0) {
+                    tracks.forEach(track => {
+                        myTracks.push(track);
+                    });
+                    saveMyTracks();
+                    renderLibrary();
+                    alert(`Loaded ${tracks.length} track(s)!`);
+                }
+            } else {
+                // Иначе используем обычный file input
+                document.getElementById('local-file-input').click();
+            }
         };
 
         document.getElementById('local-file-input').onchange = async (e) => {
