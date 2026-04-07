@@ -878,7 +878,7 @@
             bottom: 0;
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(8px);
-            z-index: 1000;
+            z-index: 2000;
             align-items: center;
             justify-content: center;
             padding: 20px;
@@ -957,7 +957,7 @@
             bottom: 0;
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(8px);
-            z-index: 1000;
+            z-index: 2000;
             align-items: center;
             justify-content: center;
             padding: 20px;
@@ -1175,7 +1175,7 @@
             bottom: 0;
             background: rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(8px);
-            z-index: 1500;
+            z-index: 2000;
             align-items: center;
             justify-content: center;
             padding: 20px;
@@ -1603,6 +1603,8 @@
         </div>
     </div>
 
+    </div>
+
     <div class="playlist-modal" id="playlist-modal">
         <div class="playlist-content">
             <div class="playlist-header">
@@ -1781,7 +1783,8 @@
 
         function decodeUrl(encoded) {
             try {
-                return atob(encoded);
+                const decoded = atob(encoded);
+                return decodeURIComponent(decoded);
             } catch (e) {
                 return encoded;
             }
@@ -1789,17 +1792,69 @@
 
         let songBlobCache = {};
 
-        async function loadImageAsBlob(url) {
+        async function loadImageAsBlob(url, artist = null, trackList = null) {
             try {
                 if (songBlobCache[url]) {
                     return songBlobCache[url];
                 }
                 const response = await fetch(url);
+                if (!response.ok) throw new Error('Failed to load image');
                 const blob = await response.blob();
                 const blobUrl = URL.createObjectURL(blob);
                 songBlobCache[url] = blobUrl;
                 return blobUrl;
             } catch (e) {
+                // Пробуем альтернативные форматы: jpg -> png -> jpeg
+                const formats = ['.jpg', '.png', '.jpeg'];
+                let baseUrl = url;
+                
+                // Определяем текущий формат и удаляем его
+                for (const fmt of formats) {
+                    if (url.toLowerCase().endsWith(fmt)) {
+                        baseUrl = url.substring(0, url.length - fmt.length);
+                        break;
+                    }
+                }
+                
+                // Пробуем каждый формат молча (без ошибок в консоль)
+                for (const fmt of formats) {
+                    if (!url.toLowerCase().endsWith(fmt)) {
+                        try {
+                            const alternateUrl = baseUrl + fmt;
+                            const response = await fetch(alternateUrl, { signal: AbortSignal.timeout(3000) });
+                            if (response.ok) {
+                                const blob = await response.blob();
+                                const blobUrl = URL.createObjectURL(blob);
+                                songBlobCache[alternateUrl] = blobUrl;
+                                return blobUrl;
+                            }
+                        } catch (e2) {
+                            // Молча пропускаем ошибку
+                        }
+                    }
+                }
+                
+                // Если есть исполнитель и список треков, ищем обложку другого трека того же исполнителя
+                if (artist && trackList) {
+                    const fallbackSong = trackList.find(s => s.artist === artist && s.img !== url);
+                    if (fallbackSong) {
+                        try {
+                            const fallbackUrl = decodeUrl(fallbackSong.img);
+                            if (songBlobCache[fallbackUrl]) {
+                                return songBlobCache[fallbackUrl];
+                            }
+                            const response = await fetch(fallbackUrl);
+                            if (response.ok) {
+                                const blob = await response.blob();
+                                const blobUrl = URL.createObjectURL(blob);
+                                songBlobCache[fallbackUrl] = blobUrl;
+                                return blobUrl;
+                            }
+                        } catch (e2) {
+                            // Fallback тоже не загрузился
+                        }
+                    }
+                }
                 return url;
             }
         }
@@ -2285,29 +2340,48 @@
             });
         }
 
+        // Обработчик кнопки главной
+        document.querySelector('.nav-icons .nav-icon:first-child').onclick = () => {
+            const playerContainer = document.getElementById('player-container');
+            const libraryView = document.getElementById('library-view');
+            const searchView = document.getElementById('search-view');
+            
+            // Скрываем все виды
+            libraryView.classList.remove('active');
+            searchView.classList.remove('active');
+            document.getElementById('library-bottom-player').style.display = 'none';
+            
+            // Показываем плеер
+            playerContainer.classList.remove('hidden');
+            
+            // Обновляем активную кнопку навигации
+            document.querySelectorAll('.nav-icon').forEach(icon => icon.classList.remove('active'));
+            document.querySelector('.nav-icons .nav-icon:first-child').classList.add('active');
+        };
+
         document.getElementById('library-btn').onclick = () => {
             const playerContainer = document.getElementById('player-container');
             const libraryView = document.getElementById('library-view');
             const searchView = document.getElementById('search-view');
             const libPlayer = document.getElementById('library-bottom-player');
             
-            // Скрываем поиск если открыт
+            // Скрываем все виды
             searchView.classList.remove('active');
+            libraryView.classList.remove('active');
+            playerContainer.classList.remove('hidden');
+            libPlayer.style.display = 'none';
             
-            // Переключаем библиотеку
-            if (libraryView.classList.contains('active')) {
-                // Закрываем библиотеку, показываем плеер
-                libraryView.classList.remove('active');
-                playerContainer.classList.remove('hidden');
-                libPlayer.style.display = 'none';
-            } else {
-                // Открываем библиотеку, скрываем плеер
-                libraryView.classList.add('active');
-                playerContainer.classList.add('hidden');
-                libPlayer.style.display = 'flex';
-                sortSongs();
-                renderLibrary();
-            }
+            // Открываем библиотеку
+            libraryView.classList.add('active');
+            playerContainer.classList.add('hidden');
+            libPlayer.style.display = 'flex';
+            
+            // Обновляем активную кнопку навигации
+            document.querySelectorAll('.nav-icon').forEach(icon => icon.classList.remove('active'));
+            document.getElementById('library-btn').classList.add('active');
+            
+            sortSongs();
+            renderLibrary();
         };
 
         // Обработчик кнопки settings
@@ -2341,21 +2415,21 @@
             const libraryView = document.getElementById('library-view');
             const searchView = document.getElementById('search-view');
             
-            // Скрываем библиотеку если открыта
+            // Скрываем все виды
             libraryView.classList.remove('active');
+            playerContainer.classList.remove('hidden');
+            document.getElementById('library-bottom-player').style.display = 'none';
             
-            // Переключаем поиск
-            if (searchView.classList.contains('active')) {
-                // Закрываем поиск, показываем плеер
-                searchView.classList.remove('active');
-                playerContainer.classList.remove('hidden');
-            } else {
-                // Открываем поиск, скрываем плеер
-                searchView.classList.add('active');
-                playerContainer.classList.add('hidden');
-                document.getElementById('search-input').focus();
-                renderRecommendedTracks();
-            }
+            // Открываем поиск
+            searchView.classList.add('active');
+            playerContainer.classList.add('hidden');
+            
+            // Обновляем активную кнопку навигации
+            document.querySelectorAll('.nav-icon').forEach(icon => icon.classList.remove('active'));
+            document.getElementById('search-btn').classList.add('active');
+            
+            document.getElementById('search-input').focus();
+            renderRecommendedTracks();
         };
 
         closePlaylistBtn.onclick = () => {
@@ -2543,7 +2617,7 @@
         loadMyTracks();
 
         // Загружаем данные из sounds.json
-        fetch('sounds.json')
+        fetch('sounds.json?v=' + Date.now())
             .then(response => {
                 if (!response.ok) throw new Error('Network response was not ok');
                 return response.json();
