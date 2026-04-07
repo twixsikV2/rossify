@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Rossify - Desktop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1402,6 +1402,479 @@
             color: rgba(255, 255, 255, 0.5);
             font-size: 0.95rem;
         }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 60px;
+                gap: 20px;
+            }
+
+            .nav-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .library-list {
+                flex: 0 0 350px;
+            }
+
+            .library-preview {
+                flex: 0 0 280px;
+                padding: 20px;
+            }
+
+            .library-album-art {
+                width: 200px;
+                height: 200px;
+            }
+
+            .library-album-container {
+                width: 200px;
+                height: 200px;
+            }
+
+            .center-panel {
+                padding: 20px;
+            }
+
+            .album-art-container {
+                width: 200px;
+                height: 200px;
+            }
+
+            .track-name {
+                font-size: 1.4rem;
+            }
+
+            .right-panel {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: 60px;
+                flex-direction: row;
+                padding: 0 20px;
+                gap: 20px;
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .logo {
+                margin-bottom: 0;
+                margin-right: auto;
+            }
+
+            .nav-icons {
+                flex-direction: row;
+                gap: 10px;
+                flex: 0;
+            }
+
+            .main-content {
+                flex-direction: column;
+                padding: 10px;
+                gap: 10px;
+            }
+
+            .player-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .center-panel {
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .album-art-container {
+                width: 150px;
+                height: 150px;
+            }
+
+            .album-art {
+                border-radius: 12px;
+            }
+
+            .track-name {
+                font-size: 1.2rem;
+            }
+
+            .track-artist {
+                font-size: 0.9rem;
+            }
+
+            .controls {
+                gap: 16px;
+            }
+
+            .control-btn {
+                width: 36px;
+                height: 36px;
+            }
+
+            .play-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+
+            .right-panel {
+                width: 100%;
+                flex-direction: row;
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .visualizer {
+                flex: 0;
+                min-height: 60px;
+                gap: 2px;
+            }
+
+            .bar {
+                width: 4px;
+            }
+
+            .playlist-btn {
+                flex: 1;
+                padding: 10px;
+                font-size: 0.85rem;
+            }
+
+            .bottom-controls {
+                flex: 1;
+                gap: 8px;
+            }
+
+            .bottom-btn {
+                padding: 8px;
+                font-size: 0.7rem;
+            }
+
+            .library-view {
+                flex-direction: column;
+            }
+
+            .library-list {
+                flex: 0 0 auto;
+                max-height: 40vh;
+                border-radius: 16px;
+            }
+
+            .library-preview {
+                flex: 0 0 auto;
+                border-radius: 16px;
+                padding: 20px;
+            }
+
+            .library-album-art {
+                width: 150px;
+                height: 150px;
+            }
+
+            .library-album-container {
+                width: 150px;
+                height: 150px;
+            }
+
+            .library-info-name {
+                font-size: 1.2rem;
+            }
+
+            .library-info-artist {
+                font-size: 0.9rem;
+            }
+
+            .library-bottom-player {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                right: auto;
+                height: auto;
+                padding: 12px;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+
+            .library-player-controls {
+                gap: 4px;
+            }
+
+            .library-player-btn {
+                width: 28px;
+                height: 28px;
+            }
+
+            .library-player-info {
+                flex: 0 1 150px;
+            }
+
+            .library-player-progress {
+                flex: 1;
+                min-width: 150px;
+            }
+
+            .search-container-main {
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .search-input {
+                padding: 12px 14px;
+                font-size: 1rem;
+            }
+
+            .search-buttons {
+                gap: 8px;
+            }
+
+            .search-btn-online,
+            .search-btn-mytracks {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+
+            .search-result-item {
+                gap: 12px;
+                padding: 12px;
+            }
+
+            .search-result-cover {
+                width: 60px;
+                height: 60px;
+            }
+
+            .recommended-tracks {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 12px;
+            }
+
+            .recommended-track {
+                padding: 10px;
+            }
+
+            .playlist-modal {
+                padding: 10px;
+            }
+
+            .playlist-content {
+                max-width: 90vw;
+                max-height: 80vh;
+                padding: 20px;
+            }
+
+            .info-content {
+                max-width: 90vw;
+                padding: 20px;
+            }
+
+            .context-menu {
+                min-width: 180px;
+            }
+
+            .context-menu-item {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sidebar {
+                height: 50px;
+                padding: 0 10px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .nav-icon {
+                width: 36px;
+                height: 36px;
+            }
+
+            .main-content {
+                padding: 8px;
+                gap: 8px;
+            }
+
+            .center-panel {
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .album-art-container {
+                width: 120px;
+                height: 120px;
+            }
+
+            .track-name {
+                font-size: 1rem;
+            }
+
+            .track-artist {
+                font-size: 0.8rem;
+            }
+
+            .time-display {
+                font-size: 0.75rem;
+            }
+
+            .controls {
+                gap: 12px;
+            }
+
+            .control-btn {
+                width: 32px;
+                height: 32px;
+            }
+
+            .play-btn {
+                width: 44px;
+                height: 44px;
+                font-size: 18px;
+            }
+
+            .right-panel {
+                padding: 12px;
+            }
+
+            .visualizer {
+                min-height: 50px;
+            }
+
+            .bar {
+                width: 3px;
+            }
+
+            .library-list {
+                max-height: 35vh;
+                padding: 12px;
+            }
+
+            .library-item-cover {
+                width: 70px;
+                height: 70px;
+            }
+
+            .library-item-name {
+                font-size: 0.9rem;
+            }
+
+            .library-item-artist {
+                font-size: 0.75rem;
+            }
+
+            .library-preview {
+                padding: 15px;
+            }
+
+            .library-album-art {
+                width: 120px;
+                height: 120px;
+            }
+
+            .library-album-container {
+                width: 120px;
+                height: 120px;
+            }
+
+            .library-info-name {
+                font-size: 1rem;
+            }
+
+            .library-info-artist {
+                font-size: 0.8rem;
+            }
+
+            .search-container-main {
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .search-input {
+                padding: 10px 12px;
+                font-size: 0.95rem;
+            }
+
+            .search-result-cover {
+                width: 50px;
+                height: 50px;
+            }
+
+            .search-result-name {
+                font-size: 0.9rem;
+            }
+
+            .search-result-artist {
+                font-size: 0.75rem;
+            }
+
+            .recommended-tracks {
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 10px;
+            }
+
+            .recommended-cover {
+                border-radius: 6px;
+            }
+
+            .recommended-name {
+                font-size: 0.8rem;
+            }
+
+            .recommended-artist {
+                font-size: 0.7rem;
+            }
+
+            .playlist-content {
+                max-width: 95vw;
+                padding: 15px;
+            }
+
+            .playlist-header {
+                font-size: 1.1rem;
+            }
+
+            .playlist-item {
+                padding: 10px;
+                margin: 6px 0;
+            }
+
+            .playlist-item-name {
+                font-size: 0.9rem;
+            }
+
+            .playlist-item-artist {
+                font-size: 0.75rem;
+            }
+
+            .info-content {
+                max-width: 95vw;
+                padding: 15px;
+            }
+
+            .info-header {
+                font-size: 1.2rem;
+            }
+
+            .info-text {
+                font-size: 0.9rem;
+            }
+
+            .lang-btn {
+                padding: 8px 12px;
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1488,6 +1961,9 @@
             <div class="visualizer-title" data-i18n="visualizer"></div>
             <div class="visualizer" id="visualizer"></div>
             <button class="playlist-btn" id="open-playlist" data-i18n="playlist-title"></button>
+            <button class="playlist-btn" id="upload-local-btn" data-i18n="upload-local"></button>
+            <button class="playlist-btn" id="clear-cache-btn" data-i18n="clear-cache"></button>
+            <input type="file" id="local-file-input" accept=".mp3,.m4a,.wav,.ogg" multiple style="display: none;">
             <div class="bottom-controls">
                 <button class="bottom-btn" data-i18n="volume"></button>
                 <button class="bottom-btn" data-i18n="repeat"></button>
@@ -1899,7 +2375,7 @@
             displayedSongs.forEach((song, idx) => {
                 const item = document.createElement('div');
                 
-                // Определяем активный трек по имени и артисту, а не по индексу
+                // Определяем активный трек по имени и артисту
                 let trackList = currentTab === 'mytracks' ? myTracks : songs;
                 let currentTrack = trackList[currentDisplayIdx];
                 let isActive = currentTrack && (currentTrack.name === song.name && currentTrack.artist === song.artist);
@@ -1909,9 +2385,14 @@
                 img.className = 'library-item-cover';
                 img.alt = song.name;
                 
-                loadImageAsBlob(decodeUrl(song.img)).then(blobUrl => {
-                    img.src = blobUrl;
-                });
+                // Загружаем обложку
+                if (song.img.startsWith('data:') || song.img.startsWith('blob:')) {
+                    img.src = song.img;
+                } else {
+                    loadImageAsBlob(decodeUrl(song.img)).then(blobUrl => {
+                        img.src = blobUrl;
+                    });
+                }
                 
                 const info = document.createElement('div');
                 info.className = 'library-item-info';
@@ -2072,17 +2553,32 @@
             currentIdx = songs.findIndex(s => s.name === song.name && s.artist === song.artist);
             if (currentIdx === -1) currentIdx = 0;
             
-            player.src = decodeUrl(song.file);
-            
-            // Загружаем картинку через blob
-            loadImageAsBlob(decodeUrl(song.img)).then(blobUrl => {
-                albumArt.src = blobUrl;
-            });
+            // Просто устанавливаем источник
+            player.src = song.file;
             
             trackName.innerText = song.name;
             trackArtist.innerText = song.artist;
             document.getElementById('bottom-artist').innerText = song.artist;
-            durationDisplay.innerText = formatTime(song.duration);
+            
+            // Обновляем длительность
+            if (player.duration && !isNaN(player.duration)) {
+                durationDisplay.innerText = formatTime(player.duration);
+            } else {
+                player.onloadedmetadata = () => {
+                    durationDisplay.innerText = formatTime(player.duration);
+                };
+            }
+            
+            // Загружаем обложку
+            if (song.img.startsWith('data:') || song.img.startsWith('blob:')) {
+                albumArt.src = song.img;
+                document.getElementById('library-album-art').src = song.img;
+            } else {
+                loadImageAsBlob(decodeUrl(song.img)).then(blobUrl => {
+                    albumArt.src = blobUrl;
+                    document.getElementById('library-album-art').src = blobUrl;
+                });
+            }
             
             albumArt.style.display = 'block';
             document.getElementById('placeholder').style.display = 'none';
@@ -2092,11 +2588,6 @@
             updatePlayButton();
             renderPlaylist();
             
-            // Обновляем превью с текущим треком
-            document.getElementById('library-album-art').src = '';
-            loadImageAsBlob(decodeUrl(song.img)).then(blobUrl => {
-                document.getElementById('library-album-art').src = blobUrl;
-            });
             document.getElementById('library-info-name').innerText = song.name;
             document.getElementById('library-info-artist').innerText = song.artist;
             
@@ -2131,7 +2622,15 @@
             trackName.innerText = song.name;
             trackArtist.innerText = song.artist;
             document.getElementById('bottom-artist').innerText = song.artist;
-            durationDisplay.innerText = formatTime(song.duration);
+            
+            // Обновляем длительность когда метаданные загружены
+            if (player.duration && !isNaN(player.duration)) {
+                durationDisplay.innerText = formatTime(player.duration);
+            } else {
+                player.onloadedmetadata = () => {
+                    durationDisplay.innerText = formatTime(player.duration);
+                };
+            }
             
             albumArt.style.display = 'block';
             document.getElementById('placeholder').style.display = 'none';
@@ -2615,6 +3114,89 @@
 
         // Загружаем myTracks из localStorage
         loadMyTracks();
+
+        // Загружаем локальный файл
+        async function handleLocalFileUpload(file) {
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                const blob = new Blob([arrayBuffer], { type: file.type });
+                const blobUrl = URL.createObjectURL(blob);
+                
+                // Получаем метаданные
+                const audio = new Audio();
+                audio.src = blobUrl;
+                
+                const duration = await new Promise((resolve) => {
+                    audio.onloadedmetadata = () => resolve(Math.round(audio.duration) || 0);
+                    setTimeout(() => resolve(0), 5000);
+                });
+                
+                const fileName = file.name.replace(/\.[^/.]+$/, '');
+                
+                // Генерируем обложку с градиентом
+                const canvas = document.createElement('canvas');
+                canvas.width = 200;
+                canvas.height = 200;
+                const ctx = canvas.getContext('2d');
+                
+                const colors = ['#FF6B6B', '#4ECDC4', '#45B7D1', '#FFA07A', '#98D8C8', '#F7DC6F'];
+                const color = colors[Math.floor(Math.random() * colors.length)];
+                
+                ctx.fillStyle = color;
+                ctx.fillRect(0, 0, 200, 200);
+                ctx.fillStyle = 'rgba(255,255,255,0.1)';
+                ctx.font = 'bold 24px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(fileName.substring(0, 20), 100, 100);
+                
+                const imgUrl = canvas.toDataURL('image/png');
+                
+                // Добавляем в myTracks
+                myTracks.push({
+                    name: fileName,
+                    artist: 'Local File',
+                    file: blobUrl,
+                    img: imgUrl,
+                    duration: duration,
+                    isLocal: true
+                });
+                
+                saveMyTracks();
+                renderLibrary();
+                
+                return { name: fileName, file: blobUrl, img: imgUrl, duration };
+            } catch (error) {
+                console.error('Error loading local file:', error);
+                alert('Error loading file: ' + error.message);
+            }
+        }
+
+        // Обработчик кнопки загрузки локальных файлов
+        document.getElementById('upload-local-btn').onclick = () => {
+            document.getElementById('local-file-input').click();
+        };
+
+        document.getElementById('local-file-input').onchange = async (e) => {
+            const files = e.target.files;
+            if (files.length === 0) return;
+            
+            for (let file of files) {
+                await handleLocalFileUpload(file);
+            }
+            
+            e.target.value = '';
+        };
+
+        // Обработчик кнопки очистки
+        document.getElementById('clear-cache-btn').onclick = () => {
+            if (confirm('Remove all local files?')) {
+                myTracks = myTracks.filter(t => !t.isLocal);
+                saveMyTracks();
+                renderLibrary();
+                alert('Local files removed!');
+            }
+        };
 
         // Загружаем данные из sounds.json
         fetch('sounds.json?v=' + Date.now())
